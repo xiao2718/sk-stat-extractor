@@ -7,6 +7,8 @@ Stats live in two layers:
 1. **Tier-scale constants** (hard-coded in the game's Java) — see [`TIER_SCALE.md`](./TIER_SCALE.md). Maps `LOW`/`MEDIUM`/`HIGH`/… to actual percentages.
 2. **Per-item configuration** in `rsrc/config/*.dat` binary Clyde files. `DumpDats.java` decodes them to XML.
 
+**Modders:** see [`EXTRACTION_GUIDE.md`](./EXTRACTION_GUIDE.md) — full background on the Clyde framework, how the dump works, obfuscation gotchas, every `.dat` → Config class mapping, and how to round-trip XML back to `.dat` for patching.
+
 ## Run
 
 ```bash
